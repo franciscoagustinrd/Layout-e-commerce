@@ -24,7 +24,7 @@ nav {
     font-size: 25px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 aside {
@@ -36,30 +36,36 @@ aside {
     padding-top: 8%;
 }
 
-h3, h4, a{
+h3,
+h4,
+a {
     font-family: "Jersey 25", sans-serif;
     text-align: center;
 }
 
-h3{
+h3 {
     padding: 5%;
 }
 
-h4, p{
+h4,
+p {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     padding-bottom: 3%;
 }
-h4.title-list{
+
+h4.title-list {
     text-align: left;
 }
+
 ul {
     list-style: none;
     text-align: left;
 }
 
-li, footer {
+li,
+footer {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -68,10 +74,12 @@ li, footer {
 li {
     line-height: 1.6;
 }
-span{
+
+span {
     color: #26527B;
     font-weight: 300;
 }
+
 main {
     grid-area: main;
     background-color: #E7E7E7;
@@ -86,7 +94,7 @@ main {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 img {
@@ -104,8 +112,9 @@ a {
     display: inline-block;
     font-size: 16px;
 }
-a:hover{
-    background-color:#e63946;
+
+a:hover {
+    background-color: #e63946;
 }
 
 footer {
@@ -122,4 +131,3 @@ i {
     color: #788088;
     padding: 0 .5% 0 0;
 }
-
