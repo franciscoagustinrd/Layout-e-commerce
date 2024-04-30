@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "nav nav nav nav"
+        "aside main main main"
+        "footer footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 5% 3fr 5%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #26527B;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+aside {
+    grid-area: aside;
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+}
+
+h3, h4, a{
+    font-family: "Jersey 25", sans-serif;
+    text-align: center;
+}
+
+h3{
+    padding: 5%;
+}
+
+h4, p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 3%;
+}
+h4.title-list{
+    text-align: left;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li, footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+li {
+    line-height: 1.6;
+}
+span{
+    color: #26527B;
+    font-weight: 300;
+}
+main {
+    grid-area: main;
+    background-color: #E7E7E7;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 2%;
+}
+
+.producto {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    background-color: #26527B;
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+a:hover{
+    background-color:#e63946;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.5%;
+    color: #788088;
+}
+
+i {
+    color: #788088;
+    padding: 0 .5% 0 0;
+}
+
